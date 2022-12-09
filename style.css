@@ -1,0 +1,61 @@
+#outer{
+    background-color: lightgray;
+    height: 65vh;
+    width: 35%;
+    min-width: 400px;
+    min-height: 450px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    display: inline-block;
+    border: 1.5px solid black;
+}
+
+/*It is not working to set both parent element and child element height in terms of percentage. Atleast one should be static unit to work.*/
+
+#screen{
+    display: inline-block;
+    height: 25%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#keypad{
+    width: 100%;
+    height: 75%;
+}
+
+.keys{
+    width: 100%;
+    height: 20%;
+    background-color: orange;
+    box-sizing: border-box;
+}
+
+.key-btn{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: inherit;
+    font-size: 1.5rem;
+}
+
+.mrgl{
+    margin-left: -4px;
+}
+
+#screen p{
+    display: inline-block;
+    width: 97%;
+    position: relative;
+    font-size: 2.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.key-btn:hover{
+    background-color:lightslategrey;
+}
